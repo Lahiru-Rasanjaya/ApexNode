@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +17,10 @@
             box-sizing: border-box;
         }
 
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #050816; 
-            color: #fff; 
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #050816;
+            color: #fff;
             overflow-x: hidden;
         }
 
@@ -31,9 +32,9 @@
 
         .bg-animate {
             background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #050816 100%);
-            position: fixed; 
-            width: 100%; 
-            height: 100%; 
+            position: fixed;
+            width: 100%;
+            height: 100%;
             z-index: -1;
         }
 
@@ -53,40 +54,68 @@
 
         .project-overlay {
             background: linear-gradient(to top, rgba(145, 94, 255, 0.9), transparent);
-            opacity: 0; 
+            opacity: 0;
             transition: 0.3s;
         }
 
-        .project-card:hover .project-overlay { 
-            opacity: 1; 
+        .project-card:hover .project-overlay {
+            opacity: 1;
         }
 
         /* Custom scrollbar */
-        ::-webkit-scrollbar { 
-            width: 8px; 
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        ::-webkit-scrollbar-track { 
-            background: #050816; 
+
+        ::-webkit-scrollbar-track {
+            background: #050816;
         }
-        ::-webkit-scrollbar-thumb { 
-            background: #915eff; 
-            border-radius: 10px; 
+
+        ::-webkit-scrollbar-thumb {
+            background: #915eff;
+            border-radius: 10px;
         }
 
         /* Improved responsive text sizing */
         @media (max-width: 640px) {
-            h1 { font-size: 2rem !important; line-height: 1.2; }
-            h2 { font-size: 1.75rem !important; }
-            h3 { font-size: 1.25rem !important; }
-            p { font-size: 0.95rem; }
-            .text-5xl { font-size: 2.5rem; }
-            .text-4xl { font-size: 1.75rem; }
-            .text-3xl { font-size: 1.5rem; }
+            h1 {
+                font-size: 2rem !important;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 1.75rem !important;
+            }
+
+            h3 {
+                font-size: 1.25rem !important;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            .text-5xl {
+                font-size: 2.5rem;
+            }
+
+            .text-4xl {
+                font-size: 1.75rem;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem !important; }
-            h2 { font-size: 2rem !important; }
+            h1 {
+                font-size: 2.5rem !important;
+            }
+
+            h2 {
+                font-size: 2rem !important;
+            }
         }
 
         /* Better touch targets and spacing on mobile */
@@ -94,7 +123,9 @@
             .glass-card {
                 padding: 1.5rem !important;
             }
-            button, a {
+
+            button,
+            a {
                 min-height: 44px;
             }
         }
@@ -125,6 +156,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="bg-animate"></div>
 
@@ -149,12 +181,18 @@
         </div>
 
         <!-- Improved mobile menu with better responsive styling -->
-        <div id="mobile-menu" class="hidden flex flex-col bg-[#050816] w-full absolute left-0 top-full p-4 space-y-3 md:hidden border-b border-white/10">
-            <a href="#home" class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Home</a>
-            <a href="#services" class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Services</a>
-            <a href="#technologies" class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Technologies</a>
-            <a href="#projects" class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Projects</a>
-            <a href="#contact" class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Contact</a>
+        <div id="mobile-menu"
+            class="hidden flex flex-col bg-[#050816] w-full absolute left-0 top-full p-4 space-y-3 md:hidden border-b border-white/10">
+            <a href="#home"
+                class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Home</a>
+            <a href="#services"
+                class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Services</a>
+            <a href="#technologies"
+                class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Technologies</a>
+            <a href="#projects"
+                class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Projects</a>
+            <a href="#contact"
+                class="mobile-link block py-3 px-4 hover:bg-white/5 rounded-lg hover:text-[#915eff] transition">Contact</a>
         </div>
     </nav>
 
@@ -162,14 +200,18 @@
     <section id="home" class="min-h-screen flex items-center justify-center pt-24 md:pt-20 px-4 md:px-6">
         <div class="text-center" data-tilt="" data-tilt-max="5">
             <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight">
-                Innovative <span class="gradient-text">Software</span><br class="hidden sm:block"/>For The Future
+                Innovative <span class="gradient-text">Software</span><br class="hidden sm:block" />For The Future
             </h1>
             <p class="text-gray-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-6 sm:mb-10 px-2">
                 We build high-end digital products with immersive interfaces and cutting-edge technology.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-2">
-                <a href="#projects" class="bg-[#915eff] px-6 sm:px-8 py-3 rounded-full font-bold hover:scale-105 transition shadow-[0_0_20px_#915eff66] text-sm sm:text-base">Our Work</a>
-                <a href="#contact" class="border border-white/20 px-6 sm:px-8 py-3 rounded-full font-bold hover:bg-white/10 transition text-sm sm:text-base">Let's Talk</a>
+                <a href="#projects"
+                    class="bg-[#915eff] px-6 sm:px-8 py-3 rounded-full font-bold hover:scale-105 transition shadow-[0_0_20px_#915eff66] text-sm sm:text-base">Our
+                    Work</a>
+                <a href="#contact"
+                    class="border border-white/20 px-6 sm:px-8 py-3 rounded-full font-bold hover:bg-white/10 transition text-sm sm:text-base">Let's
+                    Talk</a>
             </div>
         </div>
     </section>
@@ -181,12 +223,15 @@
                 Services <span class="text-[#915eff]">We Provide</span>
             </h2>
             <p class="text-gray-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed px-2">
-                At <span class="text-white font-semibold">ApexNode</span>, we offer a comprehensive suite of digital solutions designed to drive your business forward. Our expert team is dedicated to delivering innovative and effective services tailored to your unique needs.
+                At <span class="text-white font-semibold">ApexNode</span>, we offer a comprehensive suite of digital
+                solutions designed to drive your business forward. Our expert team is dedicated to delivering innovative
+                and effective services tailored to your unique needs.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
-            <div class="glass-card p-6 sm:p-10 text-center group hover:border-[#915eff55] transition-all duration-300" data-tilt="">
+            <div class="glass-card p-6 sm:p-10 text-center group hover:border-[#915eff55] transition-all duration-300"
+                data-tilt="">
                 <div class="mb-4 sm:mb-6 inline-block p-3 sm:p-4 rounded-2xl bg-[#915eff1a]">
                     <i class="fas fa-laptop-code text-3xl sm:text-5xl text-[#915eff]"></i>
                 </div>
@@ -196,52 +241,70 @@
                 </p>
             </div>
 
-            <div class="glass-card p-6 sm:p-10 text-center group hover:border-pink-500/50 transition-all duration-300" data-tilt="">
+            <div class="glass-card p-6 sm:p-10 text-center group hover:border-pink-500/50 transition-all duration-300"
+                data-tilt="">
                 <div class="mb-4 sm:mb-6 inline-block p-3 sm:p-4 rounded-2xl bg-pink-500/10">
                     <i class="fas fa-mobile-alt text-3xl sm:text-5xl text-pink-500"></i>
                 </div>
                 <h3 class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4">UI/UX Design</h3>
                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                    Stunning, user-centric mobile and web interfaces that prioritize seamless user journeys and 3D visual flow.
+                    Stunning, user-centric mobile and web interfaces that prioritize seamless user journeys and 3D
+                    visual flow.
                 </p>
             </div>
 
-            <div class="glass-card p-6 sm:p-10 text-center group hover:border-blue-500/50 transition-all duration-300" data-tilt="">
+            <div class="glass-card p-6 sm:p-10 text-center group hover:border-blue-500/50 transition-all duration-300"
+                data-tilt="">
                 <div class="mb-4 sm:mb-6 inline-block p-3 sm:p-4 rounded-2xl bg-blue-500/10">
                     <i class="fas fa-server text-3xl sm:text-5xl text-blue-500"></i>
                 </div>
                 <h3 class="text-lg sm:text-2xl font-bold mb-3 sm:mb-4">Cloud Solutions</h3>
                 <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                    Scalable, secure, and high-performance cloud infrastructure to ensure your business stays online 24/7.
+                    Scalable, secure, and high-performance cloud infrastructure to ensure your business stays online
+                    24/7.
                 </p>
             </div>
         </div>
 
         <!-- Improved responsive stats section -->
         <div class="mt-12 sm:mt-20 glass-card p-8 sm:p-12 relative overflow-hidden">
-            <div class="absolute top-0 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-[#915eff11] blur-[100px] rounded-full"></div>
+            <div class="absolute top-0 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-[#915eff11] blur-[100px] rounded-full">
+            </div>
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-12 items-center text-center">
-                <div class="flex flex-col items-center justify-center border-b sm:border-b-0 sm:border-r border-white/10 pb-6 sm:pb-0 col-span-2 sm:col-span-1">
+                <div
+                    class="flex flex-col items-center justify-center border-b sm:border-b-0 sm:border-r border-white/10 pb-6 sm:pb-0 col-span-2 sm:col-span-1">
                     <div class="text-xl sm:text-3xl font-black tracking-tighter mb-2">
                         <span class="text-[#915eff]">Apex</span>Node
                     </div>
-                    <p class="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-gray-500 font-bold">Est. 2026</p>
+                    <p
+                        class="text-[8px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-gray-500 font-bold">
+                        Est. 2026</p>
                 </div>
 
                 <div class="group">
-                    <h4 class="text-3xl sm:text-5xl font-extrabold gradient-text mb-2 group-hover:scale-110 transition duration-300">24+</h4>
-                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Successful<br class="sm:hidden"/>Projects</p>
+                    <h4
+                        class="text-3xl sm:text-5xl font-extrabold gradient-text mb-2 group-hover:scale-110 transition duration-300">
+                        24+</h4>
+                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Successful<br
+                            class="sm:hidden" />Projects</p>
                 </div>
 
                 <div class="group">
-                    <h4 class="text-3xl sm:text-5xl font-extrabold text-white mb-2 group-hover:scale-110 transition duration-300">50+</h4>
-                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Happy<br class="sm:hidden"/>Clients</p>
+                    <h4
+                        class="text-3xl sm:text-5xl font-extrabold text-white mb-2 group-hover:scale-110 transition duration-300">
+                        50+</h4>
+                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Happy<br
+                            class="sm:hidden" />Clients</p>
                 </div>
 
-                <div class="group col-span-2 sm:col-span-1 border-t sm:border-t-0 sm:border-l border-white/10 pt-6 sm:pt-0 sm:pl-6">
-                    <h4 class="text-3xl sm:text-5xl font-extrabold gradient-text mb-2 group-hover:scale-110 transition duration-300">10+</h4>
-                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Expert<br class="sm:hidden"/>Team</p>
+                <div
+                    class="group col-span-2 sm:col-span-1 border-t sm:border-t-0 sm:border-l border-white/10 pt-6 sm:pt-0 sm:pl-6">
+                    <h4
+                        class="text-3xl sm:text-5xl font-extrabold gradient-text mb-2 group-hover:scale-110 transition duration-300">
+                        10+</h4>
+                    <p class="text-gray-400 uppercase tracking-widest text-[8px] sm:text-xs font-bold">Expert<br
+                            class="sm:hidden" />Team</p>
                 </div>
             </div>
         </div>
@@ -253,40 +316,54 @@
             <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-8">
                 Technologies <span class="text-[#915eff]">We Use</span>
             </h2>
-            <p class="text-gray-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-12 sm:mb-16 px-2">
-                At <span class="text-white font-semibold">ApexNode</span>, we leverage cutting-edge technologies to deliver robust, scalable, and secure digital solutions.
+            <p
+                class="text-gray-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-12 sm:mb-16 px-2">
+                At <span class="text-white font-semibold">ApexNode</span>, we leverage cutting-edge technologies to
+                deliver robust, scalable, and secure digital solutions.
             </p>
 
             <!-- Improved responsive tech icons grid -->
             <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-12 md:gap-20">
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-react text-5xl sm:text-6xl text-gray-500 group-hover:text-cyan-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 uppercase tracking-widest font-bold">React</span>
+                    <i
+                        class="fab fa-react text-5xl sm:text-6xl text-gray-500 group-hover:text-cyan-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400 uppercase tracking-widest font-bold">React</span>
                 </div>
 
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-node-js text-5xl sm:text-6xl text-gray-500 group-hover:text-green-500 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-green-500 uppercase tracking-widest font-bold">Node.js</span>
+                    <i
+                        class="fab fa-node-js text-5xl sm:text-6xl text-gray-500 group-hover:text-green-500 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-green-500 uppercase tracking-widest font-bold">Node.js</span>
                 </div>
 
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-js text-5xl sm:text-6xl text-gray-500 group-hover:text-yellow-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-400 uppercase tracking-widest font-bold">JavaScript</span>
+                    <i
+                        class="fab fa-js text-5xl sm:text-6xl text-gray-500 group-hover:text-yellow-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-yellow-400 uppercase tracking-widest font-bold">JavaScript</span>
                 </div>
 
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-python text-5xl sm:text-6xl text-gray-500 group-hover:text-blue-500 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500 uppercase tracking-widest font-bold">Python</span>
+                    <i
+                        class="fab fa-python text-5xl sm:text-6xl text-gray-500 group-hover:text-blue-500 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500 uppercase tracking-widest font-bold">Python</span>
                 </div>
 
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-aws text-5xl sm:text-6xl text-gray-500 group-hover:text-orange-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-orange-400 uppercase tracking-widest font-bold">AWS</span>
+                    <i
+                        class="fab fa-aws text-5xl sm:text-6xl text-gray-500 group-hover:text-orange-400 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-orange-400 uppercase tracking-widest font-bold">AWS</span>
                 </div>
 
                 <div class="group flex flex-col items-center">
-                    <i class="fab fa-docker text-5xl sm:text-6xl text-gray-500 group-hover:text-blue-600 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
-                    <span class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-blue-600 uppercase tracking-widest font-bold">Docker</span>
+                    <i
+                        class="fab fa-docker text-5xl sm:text-6xl text-gray-500 group-hover:text-blue-600 transition-all duration-300 transform group-hover:scale-125 cursor-pointer"></i>
+                    <span
+                        class="text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity text-blue-600 uppercase tracking-widest font-bold">Docker</span>
                 </div>
             </div>
         </div>
@@ -299,96 +376,143 @@
                 Our Great <span class="text-[#915eff]">Works</span>
             </h2>
             <p class="text-gray-400 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed px-2">
-                Discover our successful projects at <span class="text-white font-semibold">ApexNode</span>. From dynamic web applications to cutting-edge mobile apps, our portfolio showcases our commitment to quality and innovation.
+                Discover our successful projects at <span class="text-white font-semibold">ApexNode</span>. From dynamic
+                web applications to cutting-edge mobile apps, our portfolio showcases our commitment to quality and
+                innovation.
             </p>
         </div>
 
         <!-- Improved responsive projects grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55]">
-              <img src="images/work2.jpg" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55]">
+                <img src="images/work2.jpg" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Web Application For Hotel</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A modern, full-featured e-commerce platform with real-time inventory management, secure payment processing, and an intuitive admin dashboard.</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A modern, full-featured e-commerce platform with
+                        real-time inventory management, secure payment processing, and an intuitive admin dashboard.</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Node.js</span>
-                  
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Node.js</span>
+
                     </div>
                 </div>
             </div>
 
-            <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55]">
-                 <img src="images/work5.jpg" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55]">
+                <img src="images/work5.jpg" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Bookshop billing system</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A task management application with admin can add billing with crud functionality and local storage.</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A task management application with admin can add billing
+                        with crud functionality and local storage.</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Java</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">NetBeans IDE</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Java</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">NetBeans
+                            IDE</span>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
-                <img src="images/work1.jpg" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
+                <img src="images/work1.jpg" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Caregiver Web Site</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website with user can find caregiver in area and booking the cregiver and payment functionality</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website with user can find
+                        caregiver in area and booking the cregiver and payment functionality</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">JavaScript</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">JavaScript</span>
 
                     </div>
                 </div>
             </div>
-                <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
-                <img src="images/work6.png" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
+                <img src="images/work6.png" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">courier management system system</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website with user can add parcel to the site and he can tracing parcel and admin can update functionality</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website with user can add
+                        parcel to the site and he can tracing parcel and admin can update functionality</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">JavaScript</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Node.js</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">JavaScript</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Node.js</span>
                     </div>
                 </div>
             </div>
-                <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
-                <img src="images/work1.jpg" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
+                <img src="images/work1.jpg" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Software company web site</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the software company with full tech functionality</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the software
+                        company with full tech functionality</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
 
                     </div>
                 </div>
             </div>
-             <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
-                <img src="images/work7.png" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
+                <img src="images/work7.png" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Software company web site</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the software company with full tech functionality</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the software
+                        company with full tech functionality</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">React</span>
 
                     </div>
                 </div>
             </div>
-            <div class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
-                <img src="images/work8.png" alt="Dashboard" class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">>
-                <div class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div
+                class="project-card relative rounded-3xl overflow-hidden glass-card group cursor-pointer border border-white/5 shadow-2xl transition-all duration-500 hover:border-[#915eff55] sm:col-span-2 lg:col-span-1">
+                <img src="images/work8.png" alt="Dashboard"
+                    class="w-full h-48 sm:h-72 object-cover transition duration-500 group-hover:scale-110">
+                <div
+                    class="project-overlay absolute inset-0 flex flex-col justify-end p-6 sm:p-8 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
                     <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Construction web site</h3>
-                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the construction company with full tech functionality</p>
+                    <p class="text-gray-200 text-xs sm:text-sm">A fully responsive e-commerce website for the
+                        construction company with full tech functionality</p>
                     <div class="mt-3 sm:mt-4 flex gap-2 flex-wrap">
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
-                        <span class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
-                  
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Laravel</span>
+                        <span
+                            class="text-[8px] sm:text-[10px] bg-black/40 px-2 py-1 rounded-md border border-white/10 uppercase font-bold">Wordpress</span>
 
                     </div>
                 </div>
@@ -399,37 +523,45 @@
     <!-- Improved responsive contact section -->
     <section id="contact" class="py-16 sm:py-20 md:py-24 max-w-4xl mx-auto px-4 md:px-6">
         <div class="glass-card p-6 sm:p-8 md:p-12 border-[#915eff55] relative overflow-hidden">
-            <div class="absolute -top-24 -right-24 w-48 h-48 sm:w-64 sm:h-64 bg-[#915eff22] blur-[80px] rounded-full"></div>
+            <div class="absolute -top-24 -right-24 w-48 h-48 sm:w-64 sm:h-64 bg-[#915eff22] blur-[80px] rounded-full">
+            </div>
 
             <div class="relative z-10">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-center">
                     Let's Build Something <span class="text-[#915eff]">Amazing</span>
                 </h2>
-                <p class="text-gray-400 text-center text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
-                    Have questions or ready to start your project? Reach out to the <span class="text-white font-semibold">ApexNode</span> team today. We're here to help with expert advice and tailored solutions for all your needs.
+                <p
+                    class="text-gray-400 text-center text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
+                    Have questions or ready to start your project? Reach out to the <span
+                        class="text-white font-semibold">ApexNode</span> team today. We're here to help with expert
+                    advice and tailored solutions for all your needs.
                 </p>
 
                 <form id="whatsappForm" class="space-y-4 sm:space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <div class="space-y-2">
-                            <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Your Name</label>
+                            <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Your
+                                Name</label>
                             <input type="text" id="name" placeholder="John Doe" required=""
                                 class="w-full bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl focus:border-[#915eff] focus:bg-white/10 outline-none transition-all duration-300 placeholder:text-gray-600 text-sm">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Your Email</label>
+                            <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Your
+                                Email</label>
                             <input type="email" id="email" placeholder="john@example.com" required=""
                                 class="w-full bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl focus:border-[#915eff] focus:bg-white/10 outline-none transition-all duration-300 placeholder:text-gray-600 text-sm">
                         </div>
                     </div>
 
                     <div class="space-y-2">
-                        <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Project Details</label>
+                        <label class="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Project
+                            Details</label>
                         <textarea id="message" rows="5" placeholder="Briefly describe your vision..." required=""
                             class="w-full bg-white/5 border border-white/10 p-3 sm:p-4 rounded-xl focus:border-[#915eff] focus:bg-white/10 outline-none transition-all duration-300 placeholder:text-gray-600 resize-none text-sm"></textarea>
                     </div>
 
-                    <button type="submit" class="w-full bg-[#915eff] py-3 sm:py-4 rounded-xl font-bold text-white hover:shadow-[0_0_30px_#915eff66] transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-sm sm:text-base">
+                    <button type="submit"
+                        class="w-full bg-[#915eff] py-3 sm:py-4 rounded-xl font-bold text-white hover:shadow-[0_0_30px_#915eff66] transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 text-sm sm:text-base">
                         <i class="fab fa-whatsapp text-lg sm:text-xl"></i>
                         <span>Send via WhatsApp</span>
                     </button>
@@ -449,12 +581,14 @@
                         <span class="text-[#915eff]">Apex</span>Node
                     </div>
                     <p class="text-gray-400 text-xs sm:text-sm leading-relaxed mb-6">
-                        Architecting the digital future with innovative software solutions. We transform complex challenges into seamless digital experiences.
+                        Architecting the digital future with innovative software solutions. We transform complex
+                        challenges into seamless digital experiences.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">Quick Links</h4>
+                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">Quick
+                        Links</h4>
                     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-gray-400">
                         <li><a href="#home" class="hover:text-[#915eff] transition">Home</a></li>
                         <li><a href="#services" class="hover:text-[#915eff] transition">Services</a></li>
@@ -464,7 +598,8 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">Expertise</h4>
+                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">
+                        Expertise</h4>
                     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-gray-400">
                         <li>Web Development</li>
                         <li>Mobile App Design</li>
@@ -474,7 +609,8 @@
                 </div>
 
                 <div>
-                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">Get In Touch</h4>
+                    <h4 class="text-white font-bold mb-4 sm:mb-6 uppercase tracking-widest text-[10px] sm:text-xs">Get
+                        In Touch</h4>
                     <ul class="space-y-3 sm:space-y-4 text-xs sm:text-sm text-gray-400">
                         <li class="flex items-center justify-center lg:justify-start">
                             <i class="fas fa-envelope text-[#915eff] mr-2 sm:mr-3"></i>
@@ -492,7 +628,8 @@
                 </div>
             </div>
 
-            <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-gray-500 text-[10px] sm:text-xs gap-4 sm:gap-0">
+            <div
+                class="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-gray-500 text-[10px] sm:text-xs gap-4 sm:gap-0">
                 <p>© 2026 ApexNode Technologies. All Rights Reserved.</p>
                 <div class="flex space-x-4 sm:space-x-6">
                     <a href="#" class="hover:text-white transition">Privacy Policy</a>
@@ -566,4 +703,5 @@
         });
     </script>
 </body>
+
 </html>
